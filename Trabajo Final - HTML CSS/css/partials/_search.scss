@@ -1,0 +1,263 @@
+main{
+    .search{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 40px;
+        
+        .search-bar{
+            position: relative;
+            input{
+                padding: 10px;
+                max-width: 300px;
+                
+                background: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid $white;
+                color: $white;
+                &:focus + .placeholder{
+                    top: -10px;
+                    color: $red;
+                    background-color: $bg-main;
+                }
+            }
+            .placeholder{
+                position: absolute;
+                top: 20px;
+                left: 0px;
+                font-size: 14px;
+                padding: 0px 5px;
+                color: $white;
+                transition: 0.3s;
+                pointer-events: none;
+                font-family: $font-logo;
+            }
+            .search-up{
+                top: -10px;
+                color: $red;
+                background-color: $bg-main;
+            }
+            button{
+                height: 50px;
+                border: none;
+                background-color: transparent;
+                font-family: $font-logo;
+                position: absolute;
+                right: 0px;
+                cursor: pointer;
+                span{
+                    color: $white;
+                }
+            } 
+        }
+    }
+    #results{
+        height:1200px;
+        width: 100%;
+        #error{
+            width: 100%;
+            font-family: $font-logo;
+            color: $red;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .container-page{
+            .img-poster{
+                width: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                img{
+                    height: 100vh;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                h1{
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
+                    text-align: end;
+                    padding: 5px;
+                    color: $red;
+                    font-family: $font-logo;
+                    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+                    span{
+                        color: $white;
+                        font-family: $font-logo;
+                        font-size: 1.5rem;
+                        text-shadow: 1px 1px 2px rgba(0,0,0,1);
+                    }
+                }
+            }
+            p{
+                padding-top: 20px;
+                color: $white;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px){ 
+
+    main{
+        #results{
+            min-height:500px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    main{
+        .search{
+            font-size: 2rem;
+            .search-bar{
+                input{
+                    font-size: 1rem;
+                }
+                .placeholder{
+                    font-size: 1.75rem;
+                }
+                button{
+                    top: 10px;
+                }
+            }
+        }
+        #results{
+            min-height:1350px;
+            .container-page{
+                .img-poster{
+                    h1{
+                        font-size: 4rem;
+                        span{
+                            font-size: 3rem;
+                        }
+                    }
+                }
+                p{
+                    font-size: 1.75rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    main{
+        .search{
+            font-size: 2rem;
+            .search-bar{
+                .placeholder{
+                    font-size: 1.75rem;
+                }
+                button{
+                    top: 10px;
+                }
+            }
+        }
+        #results{
+            height:1550px;
+            .container-page{
+                .img-poster{
+                    h1{
+                        font-size: 4.75rem;
+                        padding-right: 20px;
+                        span{
+                            font-size: 3.25rem;
+                        }
+                    }
+                }
+                p{
+                    font-size: 1.75rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    main{
+        .search{
+            font-size: 3rem;
+            .search-bar{
+                width: 300px;
+                input{
+                    width: 300px;
+                    font-size: 1.5rem;
+                }
+                .placeholder{
+                    font-size: 2.25rem;
+                }
+                button{
+                    top: 15px;
+                }
+            }
+        }
+        #results{
+            min-height:1200px;
+            .container-page{
+                .img-poster{
+                    h1{
+                        font-size: 5.75rem;
+                        padding-right: 20px;
+                        span{
+                            font-size: 4rem;
+                        }
+                    }
+                }
+                p{
+                    font-size: 2.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+
+    main{
+        .search{
+            font-size: 3rem;
+            .search-bar{
+                width: 300px;
+                input{
+                    width: 300px;
+                    font-size: 1.5rem;
+                }
+                .placeholder{
+                    font-size: 2.25rem;
+                }
+                button{
+                    top: 15px;
+                }
+            }
+        }
+        #results{
+            min-height:1300px;
+            .container-page{
+                .img-poster{
+                    margin: auto;
+                    width: 70%;
+                    h1{
+                        font-size: 5.75rem;
+                        padding-right: 20px;
+                        span{
+                            font-size: 4rem;
+                        }
+                    }
+                }
+                p{
+                    width: 70%;
+                    margin: auto;
+                    font-size: 2.25rem;
+                }
+            }
+        }
+    }
+}

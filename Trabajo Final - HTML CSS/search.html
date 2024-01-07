@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khali Gallery | Buscar</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/search.js" defer></script>
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1>
+                <a href="./index.html">THE <br> KHALI <br> <span>GALLERY</span></a>
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./ticket.html"><span class="material-symbols-outlined">
+                    local_activity
+                    </span></a></li>
+                <li><a href="./search.html"><span class="material-symbols-outlined">
+                    search
+                    </span></a></li>
+                <li><a href="./gallery.html"><span class="material-symbols-outlined">
+                    imagesmode
+                    </span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <div class="search">
+            <div class="search-bar">
+                <input type="text" id="buscador">
+                <label class="placeholder">Explorar</label>
+                <button onclick="buscar()">
+                    <span class="material-symbols-outlined">
+                    search
+                    </span>
+                </button> 
+            </div>
+
+        </div>
+
+        <div id="results">
+            <h3 id="error" class="oculto">
+                *Introduzca un valor de búsqueda
+            </h3>
+            <div class="container-page oculto">
+                <div class="img-poster">
+                    <img src="./media/El beso.jpg" alt="">
+                    <h1>
+                        Amor Córtes <br> <span>El arte de querer</span>
+                    </h1>
+                </div>
+                <p>
+                    El amor cortés es un concepto literario creado en la Europa medieval que expresaba el amor en forma noble, sincera y caballeresca. El trovador y el poeta ayudaron a establecer este tópico a través de una industriosa difusión literaria. Descubre el arte de amar.
+                </p>
+
+            </div>
+            <div class="container-page oculto ">
+                <div class="img-poster">
+                    <img src="./media/Bilbao.jpg" alt="">
+                    <h1>
+                        Bilbao <br> <span>De villa a ciudad</span>
+                    </h1>
+                </div>
+                <p>
+                    Don Diego López de Haro V fundó la villa de Bilbao mediante una carta fundacional, o Carta Puebla, fechada en Valladolid el 15 de junio de 1300 y confirmada por el rey Fernando IV de Castilla en Burgos el 4 de enero de 1301. El señor de Vizcaya estableció la nueva villa en la orilla derecha de la ría de Bilbao. Este será el nacimiento de la gran urbe del siglo XXI.
+                </p>
+                
+            </div>
+            <div class="container-page oculto">
+                <div class="img-poster">
+                    <img src="./media/La Crucifixion.jpg" alt="">
+                    <h1>
+                        Las mil caras de Cristo <br> <span>Juan de Flandes</span>
+                    </h1>
+                </div>
+                <p>
+                    Muchos aspectos de su vida y carrera son ahora desconocidos; ni tan siquiera se sabe dónde nació. Su existencia sólo está documentada a partir del momento en que llegó a Castilla, en 1496, para asumir las funciones de pintor de la Corte al servicio de la reina Isabel la Católica hasta la muerte de esta en 1504.
+                </p>
+                
+            </div>
+            <div class="container-page oculto">
+                <div class="img-poster">
+                    <img src="./media/Grabado.jpg" alt="">
+                    <h1>
+                        Blanco y Negro <br> <span> Grabar en en siglo XVIII</span>
+                    </h1>
+                </div>
+                <p>
+                    La exposición ofrece un recorrido en torno a los dibujos preparatorios que se realizaban previos al grabado sobre la lámina de cobre. Si bien se entiende que la obra final es la estampa y que por tanto el dibujo preparatorio pudiera considerarse como una mera herramienta o método consecuente del proceso creativo, en esta exposición se quiere dirigir el protagonismo sobre los mismos para enfatizar y destacar su importancia tanto instrumental como artística.
+                </p>
+                
+            </div>
+            <div class="container-page oculto">
+                <div class="img-poster">
+                    <img src="./media/Milagros.jpg" alt="">
+                    <h1>
+                        Alquimia <br> <span>El mito augsburgico</span>
+                    </h1>
+                </div>
+                <p>
+                    La alquimia occidental ha estado siempre estrechamente relacionada con el hermetismo, un sistema filosófico y espiritual que tiene sus raíces en Hermes Trismegisto, una deidad sincrética grecoegipcia y legendario alquimista. Estas dos disciplinas influyeron en el nacimiento del rosacrucismo, un importante movimiento esotérico del siglo XVII.
+                </p>
+                
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="amigo-btn">
+			<a href="./ticket.html">
+                <img src="./media/Logo Amigos.svg">
+			    <span>Hazte Socio</span>
+            </a>
+        </div>
+
+        <div class="ticket-btn">
+            <a href="./ticket.html">COMPRAR ENTRADAS</a>
+        </div>
+        
+        <ul>
+            <li>Aviso legal</li>
+            <li>Política de privacidad</li>
+            <li>Política de cookies</li>
+            <li>Accesibilidad</li>
+            <li>Contacto</li>
+        </ul>
+        <p>
+            Copyright © 2023. The Khali Gallery. Calle Khal s/n. Madrid. 28564. Tel +34 99 3300 9900. Todos los derechos reservados.
+        </p>
+    </footer>
+  
+
+
+</body>
+</html>

@@ -1,0 +1,1086 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Playfair Display", serif;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-red span {
+  font-weight: 400;
+  font-size: 2rem;
+  color: white;
+  background-color: #AF2F4C;
+  border-radius: 50%;
+  padding: 5px;
+  margin-top: 5px;
+}
+.btn-red:hover {
+  filter: hue-rotate(20deg);
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.error {
+  display: none;
+}
+
+.oculto {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  padding: 0px 70px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  background: transparent;
+  z-index: 999999999;
+}
+header .logo h1 {
+  display: flex;
+  align-items: center;
+  letter-spacing: 1opx;
+  font-weight: bolder;
+}
+header .logo h1 a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.75rem;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  transition-duration: 0.5s;
+}
+header .logo h1 a span {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  transition-duration: 0.5s;
+}
+header .logo h1 a:hover {
+  color: #AF2F4C;
+  transition-duration: 0.5s;
+}
+header .logo h1 a:hover span {
+  transition-duration: 0.5s;
+  color: #AF2F4C;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+  padding: 15px 0px 15px 15px;
+}
+header nav ul li a .material-symbols-outlined {
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-size: 1.75rem;
+}
+
+main {
+  padding: 120px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #111111;
+  gap: 60px;
+}
+main .container-love {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+main .container-love img {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .container-love .info-love {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+main .container-love .info-love h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.75rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+main .container-love .info-love h1 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+  font-weight: 300;
+}
+main .container-love .info-love h1 span {
+  color: white;
+  font-weight: 300;
+}
+main .container-love .info-love p {
+  font-size: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+main .container-bilbao {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+main .container-bilbao img {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .container-bilbao .info-bilbao {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+main .container-bilbao .info-bilbao h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.75rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+main .container-bilbao .info-bilbao h1 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+  font-weight: 300;
+}
+main .container-bilbao .info-bilbao h1 span {
+  color: white;
+  font-weight: 300;
+}
+main .container-bilbao .info-bilbao p {
+  font-size: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+main .container-cris {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+main .container-cris img {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .container-cris .info-cris {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+main .container-cris .info-cris h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.75rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+main .container-cris .info-cris h1 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+  font-weight: 300;
+}
+main .container-cris .info-cris h1 span {
+  color: white;
+  font-weight: 300;
+}
+main .container-cris .info-cris p {
+  font-size: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+main .container-grab {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+main .container-grab img {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .container-grab .info-grab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+main .container-grab .info-grab h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.75rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+main .container-grab .info-grab h1 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+  font-weight: 300;
+}
+main .container-grab .info-grab h1 span {
+  color: white;
+  font-weight: 300;
+}
+main .container-grab .info-grab p {
+  font-size: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+main .container-alq {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+main .container-alq img {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .container-alq .info-alq {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+main .container-alq .info-alq h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.75rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+main .container-alq .info-alq h1 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+  font-weight: 300;
+}
+main .container-alq .info-alq h1 span {
+  color: white;
+  font-weight: 300;
+}
+main .container-alq .info-alq p {
+  font-size: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+
+@media (min-width: 768px) {
+  main .container-love .info-love {
+    background: transparent;
+    width: 45%;
+    top: 20%;
+    left: 80%;
+  }
+  main .container-love .info-love h1 {
+    font-size: 2.5rem;
+  }
+  main .container-love .info-love p {
+    font-size: 1.25rem;
+  }
+  main .container-bilbao .info-bilbao {
+    background: transparent;
+    width: 35%;
+  }
+  main .container-bilbao .info-bilbao h1 {
+    font-size: 2.5rem;
+  }
+  main .container-bilbao .info-bilbao p {
+    font-size: 1.25rem;
+  }
+  main .container-cris .info-cris {
+    top: 23%;
+    left: 25%;
+    width: 35%;
+    background: transparent;
+  }
+  main .container-cris .info-cris h1 {
+    font-size: 2.5rem;
+  }
+  main .container-cris .info-cris p {
+    font-size: 1.25rem;
+  }
+  main .container-grab .info-grab {
+    left: 80%;
+    background: transparent;
+    width: 40%;
+    text-align: start;
+  }
+  main .container-grab .info-grab h1 {
+    font-size: 2.5rem;
+  }
+  main .container-grab .info-grab p {
+    font-size: 1.25rem;
+  }
+  main .container-alq .info-alq {
+    background: transparent;
+    width: 35%;
+    top: 65%;
+  }
+  main .container-alq .info-alq h1 {
+    font-size: 2.5rem;
+  }
+  main .container-alq .info-alq p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  main .container-cris .info-cris {
+    top: 20%;
+    left: 30%;
+    width: 35%;
+  }
+  main .container-grab .info-grab {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  main .container-cris .info-cris {
+    width: 30%;
+  }
+}
+main .container-ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 100px;
+  padding-bottom: 50px;
+  min-height: 80vh;
+}
+main .container-ticket .card-ticket {
+  width: 240px;
+  height: 360px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid #111111;
+  box-shadow: 10px 10px 0px 1px #AF2F4C;
+}
+main .container-ticket .card-ticket img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: 0.2s ease-out;
+}
+main .container-ticket .card-ticket .card-content h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+main .container-ticket .card-ticket .card-content h2 span {
+  font-size: 1.25rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(255, 208, 0);
+  text-align: end;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+main .container-ticket .card-ticket .card-content p {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+  inset: auto auto 80px 30px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-size: 14px;
+}
+main .container-ticket .card-ticket .card-content a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+  inset: auto auto 40px 30px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+main .container-ticket .card-ticket .card-content a span {
+  color: white;
+}
+main .container-ticket .card-ticket:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+main .container-ticket .card-ticket:hover p {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+main .container-ticket .card-ticket:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+main .container-ticket .card-ticket:hover img {
+  transition: 0.3s ease-in;
+  filter: blur(2px);
+}
+
+@media (min-width: 768px) {
+  main .container-ticket .card-ticket {
+    width: 24rem;
+    height: 36rem;
+  }
+  main .container-ticket .card-ticket .card-content p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 996px) {
+  main .container-ticket {
+    padding-top: 150px;
+    padding-bottom: 200px;
+  }
+  main .container-ticket .card-ticket {
+    width: 24rem;
+    height: 36rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .container-ticket {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+main .container-pay {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  gap: 40px;
+}
+main .container-pay .price .expo {
+  display: flex;
+  flex-direction: column;
+}
+main .container-pay .price .expo label {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  padding: 4px;
+  padding-left: 8px;
+}
+main .container-pay .price .expo select {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #AF2F4C;
+  border-radius: 4px;
+  padding: 4px;
+}
+main .container-pay .price .adults {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+main .container-pay .price .adults label {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  padding: 4px;
+  padding-left: 8px;
+}
+main .container-pay .price .adults select {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #AF2F4C;
+  border-radius: 4px;
+  padding: 4px;
+}
+main .container-pay .price .kids {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+main .container-pay .price .kids label {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  padding: 4px;
+  padding-left: 8px;
+}
+main .container-pay .price .kids select {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #AF2F4C;
+  border-radius: 4px;
+  padding: 4px;
+}
+main .container-pay .price .btn-price {
+  width: 100%;
+  margin-top: 25px;
+  padding: 9px 7px 7px 7px;
+  border: 0px;
+  border-radius: 4px;
+  background-color: #AF2F4C;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+main .container-pay .price h3 {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 3px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  border-bottom: 1px dashed #AF2F4C;
+  display: flex;
+  justify-content: space-between;
+}
+main .container-pay .price h3 span {
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(255, 208, 0);
+}
+main .container-pay .credit-card .credit-name {
+  display: flex;
+  flex-direction: column;
+}
+main .container-pay .credit-card .credit-name label {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  padding: 4px;
+  padding-left: 8px;
+}
+main .container-pay .credit-card .credit-name input {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #AF2F4C;
+  border-radius: 4px;
+  padding: 4px;
+}
+main .container-pay .credit-card .credit-number {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+main .container-pay .credit-card .credit-number label {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  padding: 4px;
+  padding-left: 8px;
+}
+main .container-pay .credit-card .credit-number input {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #AF2F4C;
+  border-radius: 4px;
+  padding: 4px;
+}
+main .container-pay .credit-card .credit-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+main .container-pay .credit-card .credit-info .credit-date {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .container-pay .credit-card .credit-info .credit-date label {
+  width: 100%;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  padding-left: 4px;
+}
+main .container-pay .credit-card .credit-info .credit-date input {
+  width: 45%;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #AF2F4C;
+  border-radius: 4px;
+  padding: 4px;
+}
+main .container-pay .credit-card .credit-info .credit-cvc {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 40px;
+}
+main .container-pay .credit-card .credit-info .credit-cvc label {
+  width: 100%;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  padding-left: 4px;
+}
+main .container-pay .credit-card .credit-info .credit-cvc input {
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #AF2F4C;
+  border-radius: 4px;
+  padding: 4px;
+}
+main .container-pay .credit-card .btn-pay {
+  width: 100%;
+  margin-top: 25px;
+  padding: 9px 7px 7px 7px;
+  border: 0px;
+  border-radius: 4px;
+  background-color: #AF2F4C;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media (min-width: 576px) {
+  main .container-pay {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  main .container-pay {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  main .container-pay {
+    width: 50%;
+  }
+}
+@media (min-width: 1400px) {
+  main .container-pay {
+    height: 80vh;
+    width: 40%;
+    padding-top: 140px;
+  }
+}
+main .search {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+}
+main .search .search-bar {
+  position: relative;
+}
+main .search .search-bar input {
+  padding: 10px;
+  max-width: 300px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+main .search .search-bar input:focus + .placeholder {
+  top: -10px;
+  color: #AF2F4C;
+  background-color: #111111;
+}
+main .search .search-bar .placeholder {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  font-size: 14px;
+  padding: 0px 5px;
+  color: white;
+  transition: 0.3s;
+  pointer-events: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+main .search .search-bar .search-up {
+  top: -10px;
+  color: #AF2F4C;
+  background-color: #111111;
+}
+main .search .search-bar button {
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+main .search .search-bar button span {
+  color: white;
+}
+main #results {
+  height: 1200px;
+  width: 100%;
+}
+main #results #error {
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  color: #AF2F4C;
+  font-size: 1rem;
+  text-align: center;
+}
+main #results .container-page .img-poster {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+main #results .container-page .img-poster img {
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #results .container-page .img-poster h1 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  text-align: end;
+  padding: 5px;
+  color: #AF2F4C;
+  font-family: "Josefin Sans", sans-serif;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+main #results .container-page .img-poster h1 span {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+main #results .container-page p {
+  padding-top: 20px;
+  color: white;
+}
+
+@media (min-width: 576px) {
+  main #results {
+    min-height: 500px;
+  }
+}
+@media (min-width: 768px) {
+  main .search {
+    font-size: 2rem;
+  }
+  main .search .search-bar input {
+    font-size: 1rem;
+  }
+  main .search .search-bar .placeholder {
+    font-size: 1.75rem;
+  }
+  main .search .search-bar button {
+    top: 10px;
+  }
+  main #results {
+    min-height: 1350px;
+  }
+  main #results .container-page .img-poster h1 {
+    font-size: 4rem;
+  }
+  main #results .container-page .img-poster h1 span {
+    font-size: 3rem;
+  }
+  main #results .container-page p {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 992px) {
+  main .search {
+    font-size: 2rem;
+  }
+  main .search .search-bar .placeholder {
+    font-size: 1.75rem;
+  }
+  main .search .search-bar button {
+    top: 10px;
+  }
+  main #results {
+    height: 1550px;
+  }
+  main #results .container-page .img-poster h1 {
+    font-size: 4.75rem;
+    padding-right: 20px;
+  }
+  main #results .container-page .img-poster h1 span {
+    font-size: 3.25rem;
+  }
+  main #results .container-page p {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .search {
+    font-size: 3rem;
+  }
+  main .search .search-bar {
+    width: 300px;
+  }
+  main .search .search-bar input {
+    width: 300px;
+    font-size: 1.5rem;
+  }
+  main .search .search-bar .placeholder {
+    font-size: 2.25rem;
+  }
+  main .search .search-bar button {
+    top: 15px;
+  }
+  main #results {
+    min-height: 1200px;
+  }
+  main #results .container-page .img-poster h1 {
+    font-size: 5.75rem;
+    padding-right: 20px;
+  }
+  main #results .container-page .img-poster h1 span {
+    font-size: 4rem;
+  }
+  main #results .container-page p {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1400px) {
+  main .search {
+    font-size: 3rem;
+  }
+  main .search .search-bar {
+    width: 300px;
+  }
+  main .search .search-bar input {
+    width: 300px;
+    font-size: 1.5rem;
+  }
+  main .search .search-bar .placeholder {
+    font-size: 2.25rem;
+  }
+  main .search .search-bar button {
+    top: 15px;
+  }
+  main #results {
+    min-height: 1300px;
+  }
+  main #results .container-page .img-poster {
+    margin: auto;
+    width: 70%;
+  }
+  main #results .container-page .img-poster h1 {
+    font-size: 5.75rem;
+    padding-right: 20px;
+  }
+  main #results .container-page .img-poster h1 span {
+    font-size: 4rem;
+  }
+  main #results .container-page p {
+    width: 70%;
+    margin: auto;
+    font-size: 2.25rem;
+  }
+}
+main .container-gallery {
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 8%;
+}
+main .container-gallery .gallery {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 25px;
+}
+main .container-gallery .gallery a {
+  margin: auto;
+}
+main .container-gallery .gallery a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  background: #111111;
+  padding-bottom: 50px;
+  position: relative;
+}
+footer hr {
+  width: 70%;
+  margin: auto;
+}
+footer .amigo-btn {
+  position: absolute;
+  top: -110px;
+  left: 0px;
+  width: 105px;
+  height: 105px;
+  background-color: #AF2F4C;
+  border-radius: 50%;
+  margin: 60px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+footer .amigo-btn a {
+  height: auto;
+  padding: 0;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 80px;
+}
+footer .amigo-btn a img {
+  width: 27px;
+}
+footer .amigo-btn a span {
+  color: white;
+}
+footer .amigo-btn:hover {
+  filter: hue-rotate(20deg);
+}
+footer .ticket-btn {
+  width: 105px;
+  height: 105px;
+  background-color: #AF2F4C;
+  border-radius: 50%;
+  margin: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -110px;
+  right: 0px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+footer .ticket-btn a {
+  display: flex;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 37px;
+  height: 6.5625em;
+  width: 6.5625em;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+footer .ticket-btn:hover {
+  filter: hue-rotate(20deg);
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+footer ul li {
+  padding: 5px;
+  color: white;
+}
+footer p {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  footer .amigo-btn {
+    left: 140px;
+  }
+  footer .ticket-btn {
+    right: 140px;
+  }
+}
+@media (min-width: 992px) {
+  footer .amigo-btn {
+    left: 200px;
+  }
+  footer .ticket-btn {
+    right: 200px;
+  }
+  footer ul {
+    flex-direction: row;
+    padding-top: 60px;
+  }
+  footer ul li {
+    padding: 0px 20px;
+    border-right: 1px solid white;
+  }
+  footer ul li:last-child {
+    border: 0px solid;
+  }
+}
+@media (min-width: 1200px) {
+  footer .amigo-btn {
+    left: 400px;
+  }
+  footer .ticket-btn {
+    right: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */
