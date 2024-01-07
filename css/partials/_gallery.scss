@@ -1,0 +1,22 @@
+main{
+    .container-gallery{
+        min-height: 100vh;
+        width: 100%;
+        padding: 50px 8%;
+        .gallery{
+            font-family: $font-logo;
+            color: $white;
+            display: grid;
+            grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 25px;
+            a{
+                margin: auto;
+                img{
+                    object-fit: cover;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

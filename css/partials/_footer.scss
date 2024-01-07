@@ -1,0 +1,142 @@
+footer{
+    background: $bg-main;
+    padding-bottom: 50px;
+    position: relative;
+    hr{
+        width: 70%;
+        margin: auto;
+    }
+    .amigo-btn{
+        position: absolute;
+        top: -110px;
+        left: 0px;
+        width: 105px;
+        height: 105px;
+        background-color: $red;
+        border-radius: 50%;
+        margin: 60px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+        a{
+            height: auto;
+            padding: 0;
+            font-size: 18px;
+            line-height: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            width: 80px;
+            img{
+                width: 27px;
+            }
+            span{
+                color: $white;
+            }
+        }
+        &:hover{
+            filter: hue-rotate(20deg);
+        }
+    }
+    .ticket-btn{
+        width: 105px;
+        height: 105px;
+        background-color: $red;
+        border-radius: 50%;
+        margin: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -110px;
+        right: 0px;
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+        a{
+            display: flex;
+            font-size: 14px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 37px;
+            height: 6.5625em;
+            width: 6.5625em;
+            color: $white;
+            font-family: $font-logo;
+        }
+        &:hover{
+            filter: hue-rotate(20deg);
+        }
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        margin-top: 20px;
+        li{
+            padding: 5px;
+            color: $white;
+        }
+    }
+    p{
+        text-align: center;
+        color: $white;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    footer{
+        .amigo-btn{
+            left: 140px;
+        }
+        .ticket-btn{
+            right: 140px;
+        }
+    }
+
+}
+
+@media (min-width: 992px) { 
+
+    footer{
+        .amigo-btn{
+            left: 200px;
+        }
+        .ticket-btn{
+            right: 200px;
+        }
+        ul{
+            flex-direction: row;
+            padding-top: 60px;
+            li{
+                padding: 0px 20px;
+                border-right: 1px solid $white;
+                &:last-child{
+                    border: 0px solid;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    footer{
+        .amigo-btn{
+            left: 400px;
+        }
+        .ticket-btn{
+            right: 400px;
+        }
+    }
+
+}

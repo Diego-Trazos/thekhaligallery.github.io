@@ -1,0 +1,130 @@
+main{
+    .container-ticket{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 100px;
+        padding-bottom: 50px;
+        min-height: 80vh;
+        .card-ticket{
+            width: 240px;
+            height: 360px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            border: 2px solid $bg-main;
+            box-shadow: 10px 10px 0px 1px $red;
+            img{
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0.9;
+                transition: 0.2s ease-out;
+            }
+            .card-content{
+                h2{
+                    position: absolute;
+                    inset: auto auto 30px 30px;
+                    margin: 0;
+                    transition: inset 0.3s 0.3s ease-out;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    color: $white;
+                    font-family: $font-logo;
+                    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+                    span{
+                        font-size: 1.25rem;
+                        font-family: $font-logo;
+                        color: $yellow;
+                        text-align: end;
+                        text-shadow: 1px 1px 2px rgba(0,0,0,1);
+                    }
+                }
+                p {
+                    position: absolute;
+                    opacity: 0;
+                    max-width: 80%;
+                    transition: opacity 0.3s ease-out;
+                    inset: auto auto 80px 30px;
+                    color: $white;
+                    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+                    font-size: 14px;
+                }
+                a{
+                    position: absolute;
+                    opacity: 0;
+                    max-width: 80%;
+                    transition: opacity 0.3s ease-out;
+                    inset: auto auto 40px 30px;
+                    color: $white;
+                    font-family: $font-logo;
+                    span{
+                        color: $white;
+                    }
+                }
+            }
+            &:hover h2{
+                inset: auto auto 220px 30px;
+                transition: inset 0.3s ease-out;
+            }
+            &:hover p{
+                opacity: 1;
+                transition: opacity 0.5s 0.1s ease-in;
+            }
+            &:hover a{
+                opacity: 1;
+                transition: opacity 0.5s 0.1s ease-in;
+            }
+            &:hover img{
+                transition: 0.3s ease-in;
+                filter: blur(2px);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    main{
+        .container-ticket{
+            .card-ticket{
+                width: 24rem;
+                height: 36rem;
+                .card-content{
+                    p{
+                        font-size: 18px; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 996px) {
+
+    main{
+        .container-ticket{
+            padding-top: 150px;
+            padding-bottom: 200px;
+            .card-ticket{
+                width: 24rem;
+                height: 36rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    main{
+        .container-ticket{
+            padding-top: 50px;
+            padding-bottom: 80px;
+        }
+    }
+}

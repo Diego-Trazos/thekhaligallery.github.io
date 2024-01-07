@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: $font-text;
+    color: $black;
+}
+
+img{
+    max-width: 100%;
+}
+
+.btn-red{
+    span{
+        font-weight: 400;
+        font-size: 2rem;
+        color: $white;
+        background-color: $red;
+        border-radius: 50%;
+        padding: 5px;
+        margin-top: 5px;
+    }
+    &:hover{
+        filter: hue-rotate(20deg);
+    }
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+  }
+
+.error{
+    display: none;
+}
+.oculto{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+
