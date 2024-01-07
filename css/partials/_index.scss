@@ -214,6 +214,15 @@ main{
             }
         }
     }
+    .up-index{
+        position: fixed;
+        bottom: 40px;
+        right: 0px;
+        span{
+            color: $red;
+            font-size: 60px;
+        }
+    }
 }
 
 

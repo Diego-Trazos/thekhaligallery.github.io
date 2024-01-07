@@ -1,0 +1,40 @@
+main{
+    .container-slider{
+        overflow: hidden;
+        max-width: 800px;
+        max-height: 450px;
+        margin: auto;
+        .slider{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            transition: all 0.3s ease-in;
+            align-items: center;
+            img{
+                aspect-ratio: 16 / 9;
+                object-fit: cover;
+            }
+        }
+    }
+    .container-text{
+        max-width: 800px;
+        margin: auto;
+        h1{
+            color: $red;
+            font-family: $font-logo;
+            border-bottom: 1px solid $red;
+            span{
+                color: $white;
+                font-family: $font-logo;
+            }
+        }
+        p{
+           color: $white;
+           padding: 10px 0px; 
+        }
+    }
+}
+
+.column{
+    flex-direction: column;
+}
